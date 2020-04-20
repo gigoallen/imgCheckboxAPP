@@ -38,6 +38,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/mina" />
@@ -60,6 +61,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgMina"
         app:srcCompat="@drawable/momo" />
@@ -69,8 +71,8 @@
         android:layout_width="86dp"
         android:layout_height="79dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/chkMina"
+        app:layout_constraintTop_toBottomOf="@+id/chkMina"
         app:srcCompat="@drawable/sana" />
 
     <ImageView
@@ -80,6 +82,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgMomo"
         app:srcCompat="@drawable/sana" />
@@ -91,8 +94,8 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintStart_toStartOf="@+id/chkMomo"
+        app:layout_constraintTop_toBottomOf="@+id/chkMomo"
         app:srcCompat="@drawable/tzuyu" />
 
     <ImageView
@@ -102,45 +105,46 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgSana"
         app:srcCompat="@drawable/tzuyu" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkMina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="8dp"
-        android:text="CheckBox"
+        android:text="Mina"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chkMomo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="CheckBox"
+        android:text="Momo"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/chkSana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="CheckBox"
+        android:text="Sana"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/chkTzuyu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="CheckBox"
+        android:text="Tyuzu"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -153,8 +157,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:onClick="btnOK"
         android:text="送出"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        app:layout_constraintTop_toBottomOf="@+id/chkTzuyu" />
 </android.support.constraint.ConstraintLayout>
